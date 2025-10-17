@@ -20,5 +20,8 @@ public interface BreedFetcher {
         public BreedNotFoundException(String breed) {
             super("Breed not found: " + breed);
         }
+        public BreedNotFoundException(String breed, Throwable cause) {
+            super("Breed not found: " + breed, cause);
+        }
     }
 }
